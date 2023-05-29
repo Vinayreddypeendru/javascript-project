@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <script>
+         let arr = [
+      {"id":1,"name":"admin","password":"admin","role":"Admin"},
+      {"id":2,"name":"user","password":"user","role":"User"},
+      {"id":3,"name":"superadmin","password":"superadmin","role":"superadmin"}
+    ];
+
+    arr.forEach((item, i) => {
+       for(let key in item) {
+           console.log(`${key}: ${item[key]}`);
+       }
+    });
+
+
+arr.forEach((item, i) => {
+   for(let key in item) {
+      if (key === 'name' || key === "password") {
+          console.log(`${key}: ${item[key]}`);
+      }
+   }
+});
+    </script>
+</body>
+</html>
